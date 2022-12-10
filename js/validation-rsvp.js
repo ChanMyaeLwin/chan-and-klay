@@ -44,8 +44,10 @@
             if(error == false){
                // Disable submit button just after the form processed 1st time successfully.
                 $('#submit').attr({'disabled' : 'true', 'value' : 'Sending...' });
-                $('#mail_success').fadeIn(500);
-                $('#submit').attr('value', 'Send The Message');
+                $.post("#", $("#rsvp_form").serialize(),function(result){
+                    $('#mail_success').fadeIn(500);
+                    $('#submit').attr('value', 'Send The Message');
+                })
             }
         });    
     });

@@ -8,24 +8,39 @@
     <meta name="description" content="Chan Myae Lwin and K Zin Soe Nwe Wedding">
     <meta name="keywords" content="wedding,couple,ceremony,reception,rsvp,gallery,event,countdown">
     <meta name="author" content="">
+    <link rel="icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
 </head>
 
 <body id='main_body' style="margin:0px !important;overflow:hidden">
-    <iframe id="main_iframe" src="home.html" style="border:none;" width='100%'title="description"></iframe>
-        <audio loop="loop" autoplay="autoplay">
-        <source src="music/Feels Like a Wedding Day.mp3" type="audio/mpeg" />
+    <button id="start_music" onclick="play_music()" class='start_music'>Start Music</button>
+
+    <iframe id="main_iframe" src="home.html" style="border:none;" width='100%'title="description">
+    </iframe>
+
+    <audio id="music" loop="loop" autoplay="autoplay">
+        <source src="music/Feels Like a Wedding Day.mp3" type="audio/mp3" />
     </audio>
 
 
     <script src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-    
     <script>
         (function() {
           document.getElementById('main_body').height = window.innerHeight;
           document.getElementById('main_iframe').height = window.innerHeight +1;
 
+        })()
+        function play_music(){
+          var myAudio = document.getElementById("music");
+          if(myAudio.paused) {
+            document.getElementById('start_music').innerText = "Stop Music";
+              myAudio.play();
+          }
+          else {
+            document.getElementById('start_music').innerText = "Start Music";
+            myAudio.pause();
+          }
+        }
 
-          })()
     </script>
 </body>

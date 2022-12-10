@@ -2582,7 +2582,7 @@ span.teaser {
 	display: inline-block;
 	padding: 0px;
 	border-radius: 100%;
-	border: 8px solid;
+	border: 10px solid;
 	border-top-color: rgba(0, 0, 0, 0.65);
 	border-bottom-color: #eee;
 	border-left-color: #eee;
@@ -6154,6 +6154,14 @@ a, img {
 	}
 	.journal_img{
 		background-position:-430px 0px !important;
+	}
+
+	.quote_img{
+		background-position:-325px 0px !important;
+	}
+
+	.guest_book_img{
+		background-position:-345px 0px !important;
 	}
 	
 

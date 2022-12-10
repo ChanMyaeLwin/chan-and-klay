@@ -1,0 +1,13 @@
+
+.start_music{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 8px 30px 8px 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+    background-color: #D4AF37;
+    color:white;
+    border: 0px;
+    border-radius: 3px;
+}
