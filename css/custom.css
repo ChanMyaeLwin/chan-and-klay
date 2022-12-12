@@ -11,3 +11,23 @@
     border: 0px;
     border-radius: 3px;
 }
+
+.post-text h3{
+    color:black !important;
+}
+
+.post-text h4{
+    color:red !important;
+}
+
+#loader{
+    text-align:center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: -webkit-translate(-50%, -50%);
+    transform: -moz-translate(-50%, -50%);
+    transform: -ms-translate(-50%, -50%);
+    color:#d4af37;
+  }

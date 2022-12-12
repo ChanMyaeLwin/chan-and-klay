@@ -6661,3 +6661,7 @@ a, img {
 		width: 100% !important;
 	}
 }
+
+.top{
+	margin-top:-15% !important;
+}
